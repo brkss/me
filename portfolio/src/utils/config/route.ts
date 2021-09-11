@@ -1,10 +1,10 @@
 import { IRoute } from "../types/Route";
-
+import { Home } from "../../pages";
 export const routes: IRoute[] = [
   {
     name: "Home Page",
     path: "/",
     exact: true,
-    component: null,
+    component: Home,
   },
 ];
