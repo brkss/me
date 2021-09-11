@@ -1,5 +1,5 @@
 import React from "react";
-import { Intro, About } from "../components";
+import { Intro, About, Inspiration } from "../components";
 import { Box } from "@chakra-ui/react";
 
 export const Home: React.FC = () => {
@@ -7,6 +7,7 @@ export const Home: React.FC = () => {
     <Box>
       <Intro />
       <About />
+      <Inspiration />
     </Box>
   );
 };
