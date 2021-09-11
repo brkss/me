@@ -1,0 +1,34 @@
+import React from "react";
+import { Box, Heading, List, ListItem, Link } from "@chakra-ui/react";
+
+const projects = [
+  {
+    txt: "🔨 Opium",
+    link: "#",
+  },
+  {
+    txt: "🔨 Type 1 Copilot",
+    link: "#",
+  },
+  {
+    txt: "🔨 Hexlemons",
+    link: "#",
+  },
+];
+
+export const Things: React.FC = () => {
+  return (
+    <Box mt={5}>
+      <Heading mb={2}>Things I’m building.</Heading>
+      <List>
+        {projects.map((prj) => (
+          <ListItem mb={1}>
+            <Link fontWeight={"bold"} href={prj.link} fontSize={"18px"}>
+              {prj.txt}
+            </Link>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+};

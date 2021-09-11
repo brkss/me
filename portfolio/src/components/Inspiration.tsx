@@ -19,6 +19,10 @@ const persons = [
     checked: false,
   },
   {
+    name: "Ivan Zhao",
+    checked: false,
+  },
+  {
     name: "Ben awad",
     checked: false,
   },

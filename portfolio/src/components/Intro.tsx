@@ -11,6 +11,7 @@ export const Intro: React.FC = () => {
       </Heading>
       <Text fontSize={18}>
         {" "}
+        I love open source! <br />
         This is where i share updates, report things. You'll find stuff about
         code, music, food, health and whatever else i'm into these days.{" "}
       </Text>
