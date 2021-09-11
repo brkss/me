@@ -10,7 +10,7 @@ import { Box } from "@chakra-ui/react";
 
 export const Application: React.FC = () => {
   return (
-    <Box minH={"100vh"} bg="#f9f9f9">
+    <Box padding="0px 10px 50px" minH={"100vh"} bg="#f9f9f9">
       <Box m={"auto"} pt={7} w={{ md: "50%", base: "100%" }}>
         <BrowserRouter>
           <Switch>
