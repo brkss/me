@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Checkbox, Heading, Text, Grid } from "@chakra-ui/react";
+import { Box, Checkbox, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 
 const persons = [
   {
@@ -8,6 +8,10 @@ const persons = [
   },
   {
     name: "George Hotz",
+    checked: false,
+  },
+  {
+    name: "Luke Smith",
     checked: false,
   },
   {
@@ -39,17 +43,19 @@ const persons = [
 export const Inspiration: React.FC = () => {
   return (
     <Box mt={5}>
-      <Heading mb={2}>Who inspire me. </Heading>
-      <Text mb={3}>
+      <Heading fontSize={{ base: "1.5rem", lg: "2.25rem" }} mb={2}>
+        Who inspire me.{" "}
+      </Heading>
+      <Text fontSize="16px" mb={3}>
         Literally any one can inspire me those are just the ones i remember 🤓.
       </Text>
-      <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+      <SimpleGrid columns={[2, null, 3]} spacing="9px">
         {persons.map((pers) => (
-          <Checkbox isDisabled defaultIsChecked>
+          <Checkbox colSpan={2} isDisabled defaultIsChecked>
             {pers.name}
           </Checkbox>
         ))}
-      </Grid>
+      </SimpleGrid>
     </Box>
   );
 };

@@ -19,7 +19,9 @@ const projects = [
 export const Things: React.FC = () => {
   return (
     <Box mt={5}>
-      <Heading mb={2}>Things I’m building.</Heading>
+      <Heading fontSize={{ base: "1.5rem", lg: "2.25rem" }} mb={2}>
+        Things I’m building.
+      </Heading>
       <List>
         {projects.map((prj) => (
           <ListItem mb={1}>
