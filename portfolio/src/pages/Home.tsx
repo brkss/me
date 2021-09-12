@@ -6,6 +6,7 @@ import {
   Things,
   Twitch,
   Github,
+  Footer,
 } from "../components";
 import { Box } from "@chakra-ui/react";
 
@@ -18,6 +19,7 @@ export const Home: React.FC = () => {
       <About />
       <Inspiration />
       <Things />
+      <Footer />
     </Box>
   );
 };

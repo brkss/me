@@ -4,3 +4,4 @@ export { Inspiration } from "./Inspiration";
 export { Things } from "./Things";
 export { Twitch } from "./Twitch";
 export { Github } from "./Github";
+export { Footer } from "./Footer";
