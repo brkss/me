@@ -3,7 +3,7 @@ import { Box, Heading, Link } from "@chakra-ui/react";
 import * as ReactIcons from "react-icons/all";
 export const Twitch: React.FC = () => {
   return (
-    <Box padding={"10px 0"} mt={5}>
+    <Box padding={"10px 0 0"} mt={5}>
       <Link
         isExternal
         href="https://twitch.com/berkasse"

@@ -15,8 +15,8 @@ export const Github: React.FC = () => {
       >
         <Heading color="white" fontSize={{ md: "23px", base: "14px" }}>
           {" "}
-          <ReactIcons.FiGithub style={{ display: "inline" }} /> You can find
-          everything i'm working on here
+          <ReactIcons.FiGithub style={{ display: "inline" }} /> Everything i'm
+          working on
         </Heading>
       </Link>
     </Box>

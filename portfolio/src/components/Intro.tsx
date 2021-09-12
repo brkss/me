@@ -1,10 +1,14 @@
 import React from "react";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Image } from "@chakra-ui/react";
+import draw from "../inc/scrach.png";
 //import styled  from 'styled-component';
 
 export const Intro: React.FC = () => {
   return (
     <Box mt={5}>
+      <Box textAlign="center" w="100%">
+        <Image opacity={0.45} src={draw} margin="auto" />
+      </Box>
       <Heading
         mb={4}
         fontSize={{ base: "1.5rem", lg: "2.25rem" }}

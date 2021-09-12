@@ -14,11 +14,11 @@ export const Home: React.FC = () => {
   return (
     <Box>
       <Intro />
-      <Twitch />
-      <Github />
       <About />
       <Inspiration />
       <Things />
+      <Twitch />
+      <Github />
       <Footer />
     </Box>
   );

@@ -51,7 +51,7 @@ export const Inspiration: React.FC = () => {
       </Text>
       <SimpleGrid columns={[2, null, 3]} spacing="9px">
         {persons.map((pers) => (
-          <Checkbox colSpan={2} isDisabled defaultIsChecked>
+          <Checkbox size="lg" colSpan={2} isDisabled defaultIsChecked>
             {pers.name}
           </Checkbox>
         ))}
