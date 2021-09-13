@@ -17,8 +17,6 @@ export const Home: React.FC = () => {
       <About />
       <Inspiration />
       <Things />
-      <Twitch />
-      <Github />
       <Footer />
     </Box>
   );

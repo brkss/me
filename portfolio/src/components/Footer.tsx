@@ -5,6 +5,11 @@ import * as ReactIcons from "react-icons/all";
 export const Footer: React.FC = () => {
   return (
     <Box textAlign="center">
+      <Link href="https://twitch.com/berkasse" fontSize="21px" isExternal>
+        <ReactIcons.FiTwitch
+          style={{ display: "inline-block", marginRight: "10px" }}
+        />
+      </Link>
       <Link href="https://twitter.com/avocadoyouate" fontSize="21px" isExternal>
         <ReactIcons.FiTwitter
           style={{ display: "inline-block", marginRight: "10px" }}
