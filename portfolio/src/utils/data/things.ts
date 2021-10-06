@@ -5,6 +5,6 @@ interface IThing {
 
 export const things: IThing[] = [
   {
-    link: "https://github.com/brkss/music-queue",
+    link: "https://opencc.tech",
   },
 ];

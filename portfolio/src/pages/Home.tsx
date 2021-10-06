@@ -14,9 +14,13 @@ export const Home: React.FC = () => {
   return (
     <Box>
       <Intro />
+      <br />
       <About />
+      <br />
       <Inspiration />
+      <br />
       <Things />
+      <br />
       <Footer />
     </Box>
   );

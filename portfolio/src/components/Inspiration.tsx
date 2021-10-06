@@ -19,6 +19,10 @@ const persons = [
     checked: true,
   },
   {
+    name: "Richard Stallman",
+    checked: false,
+  },
+  {
     name: "Russ",
     checked: false,
   },
@@ -27,7 +31,7 @@ const persons = [
     checked: false,
   },
   {
-    name: "Ben awad",
+    name: "Linus Torvalds",
     checked: false,
   },
   {

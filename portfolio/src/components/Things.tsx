@@ -3,15 +3,15 @@ import { Box, Heading, List, ListItem, Link } from "@chakra-ui/react";
 
 const projects = [
   {
-    txt: "🔨 Opium",
+    txt: "🥗 OpenCC",
+    link: "https://opencc.tech",
+  },
+  {
+    txt: "🍕 Opium",
     link: "#",
   },
   {
-    txt: "🔨 Type 1 Copilot",
-    link: "#",
-  },
-  {
-    txt: "🔨 Hexlemons",
+    txt: "👁 Hexlemons",
     link: "#",
   },
 ];
@@ -25,7 +25,12 @@ export const Things: React.FC = () => {
       <List>
         {projects.map((prj) => (
           <ListItem mb={1}>
-            <Link fontWeight={"bold"} href={prj.link} fontSize={"18px"}>
+            <Link
+              fontWeight={"bold"}
+              href={prj.link}
+              fontSize={"18px"}
+              isExternal
+            >
               {prj.txt}
             </Link>
           </ListItem>
