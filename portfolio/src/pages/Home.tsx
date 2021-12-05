@@ -1,27 +1,17 @@
 import React from "react";
-import {
-  Intro,
-  About,
-  Inspiration,
-  Things,
-  Twitch,
-  Github,
-  Footer,
-} from "../components";
-import { Box } from "@chakra-ui/react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { Things } from "../components";
 
 export const Home: React.FC = () => {
   return (
     <Box>
-      <Intro />
-      <br />
-      <About />
-      <br />
-      <Inspiration />
-      <br />
-      <Things />
-      <br />
-      <Footer />
+      <Center h={"100vh"}>
+        <Box textAlign={"center"}>
+          <Heading fontSize={"50px"}>🧘‍♂️</Heading>
+          <Text fontWeight={"bold"}>things i'm building 👇</Text>
+          <Things />
+        </Box>
+      </Center>
     </Box>
   );
 };

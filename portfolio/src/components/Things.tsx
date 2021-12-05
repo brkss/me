@@ -3,32 +3,25 @@ import { Box, Heading, List, ListItem, Link } from "@chakra-ui/react";
 
 const projects = [
   {
-    txt: "🥗 OpenCC",
+    txt: "🥗 opencc",
     link: "https://opencc.tech",
   },
   {
-    txt: "🍕 Opium",
-    link: "#",
-  },
-  {
-    txt: "👁 Hexlemons",
+    txt: "🍕 opium",
     link: "#",
   },
 ];
 
 export const Things: React.FC = () => {
   return (
-    <Box mt={5}>
-      <Heading fontSize={{ base: "1.5rem", lg: "2.25rem" }} mb={2}>
-        Things I’m building.
-      </Heading>
+    <Box textAlign={"left"} mt={5}>
       <List>
         {projects.map((prj) => (
           <ListItem mb={1}>
             <Link
               fontWeight={"bold"}
               href={prj.link}
-              fontSize={"18px"}
+              fontSize={"13px"}
               isExternal
             >
               {prj.txt}
