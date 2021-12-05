@@ -4,19 +4,38 @@ import * as ReactIcons from "react-icons/all";
 
 export const Footer: React.FC = () => {
   return (
-    <Box textAlign="center">
-      <Link href="https://twitch.com/berkasse" fontSize="21px" isExternal>
-        <ReactIcons.FiTwitch
-          style={{ display: "inline-block", marginRight: "10px" }}
+    <Box mt={10} textAlign="center">
+      <Link
+        href="https://instagram.com/brahimberkasse"
+        fontSize="21px"
+        isExternal
+      >
+        <ReactIcons.FiInstagram
+          style={{
+            display: "inline-block",
+            fontSize: "18px",
+            marginRight: "10px",
+          }}
         />
       </Link>
       <Link href="https://twitter.com/avocadoyouate" fontSize="21px" isExternal>
         <ReactIcons.FiTwitter
-          style={{ display: "inline-block", marginRight: "10px" }}
+          style={{
+            display: "inline-block",
+
+            fontSize: "18px",
+            marginRight: "10px",
+          }}
         />
       </Link>
       <Link href="https://github.com/brkss" fontSize="21px" isExternal>
-        <ReactIcons.FiGithub style={{ display: "inline-block" }} />
+        <ReactIcons.FiGithub
+          style={{
+            display: "inline-block",
+
+            fontSize: "18px",
+          }}
+        />
       </Link>
     </Box>
   );

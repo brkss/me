@@ -21,7 +21,7 @@ export const Things: React.FC = () => {
             <Link
               fontWeight={"bold"}
               href={prj.link}
-              fontSize={"13px"}
+              fontSize={"14px"}
               isExternal
             >
               {prj.txt}

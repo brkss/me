@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
-import { Things } from "../components";
+import { Things, Footer } from "../components";
 
 export const Home: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ export const Home: React.FC = () => {
           <Heading fontSize={"50px"}>🧘‍♂️</Heading>
           <Text fontWeight={"bold"}>things i'm building 👇</Text>
           <Things />
+          <Footer />
         </Box>
       </Center>
     </Box>
