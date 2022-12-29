@@ -11,3 +11,19 @@
 	padding: 0;
 	font-family: didot;
 }
+
+.main {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.nav-title {
+	font-weight: bold;
+    font-size: 17vw;
+	color: #434343;
+	cursor: pointer;
+}
+
+.right-text {
+	text-align: right;
+}
