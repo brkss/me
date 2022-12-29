@@ -12,9 +12,14 @@
 	font-family: didot;
 }
 
+
+.center {
+}
+
 .main {
 	height: 100vh;
 	overflow: hidden;
+	width: 100%;
 }
 
 .nav-title {
