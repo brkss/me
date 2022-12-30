@@ -13,7 +13,9 @@
 }
 
 
-.center {
+.content {
+	height: 100vh;
+	overflow: hidden;
 }
 
 .main {
@@ -28,6 +30,7 @@
 	color: #434343;
 	cursor: pointer;
 	transition: .3s;
+	line-height: 17vw;
 }
 
 .nav-title:hover, .nav-title {
@@ -42,3 +45,36 @@
 .right-text {
 	text-align: right;
 }
+
+#track {
+	height: 0;
+    position: absolute;
+    width: 100%;
+    background: #D0CFCF;
+    bottom: 0;
+	transition: .4s;
+}
+
+/*** GENERAL ***/
+
+.track-content{
+	padding: 10px;
+}
+
+.header > h1.title {
+	display: inline-block;
+}
+
+.header > button.close-btn {
+	display: inline-block;
+	float: right;
+	padding: 5px 14px;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    opacity: .6;
+	cursor: pointer;
+}
+
+/*** ABOUT ***/
+
