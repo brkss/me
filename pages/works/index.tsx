@@ -25,7 +25,8 @@ export default function(){
 		<Box p={'20px'} display={'flex'} alignItems={'center'} paddingTop={20} h={'100vh'} /*bg={'#fdf2ef'}*/>
 			<Grid w={'100%'} templateColumns={'repeat(12, 1fr)'}>
 				<GridItem colSpan={{base: 12, md: 6}}>
-					<Heading mb={'20px'} fontSize={'20px'}>Top-shelf Projects</Heading>
+					<Heading mb={'5px'} fontSize={'20px'}>Top-shelf Projects</Heading>
+					<Text mb={'20px'} fontSize={'14px'} opacity={'.8'}>these are project i engneered and coded solo over the past years.</Text>
 					{
 						projects.map((proj, key) => (
 							<Box key={key}>
