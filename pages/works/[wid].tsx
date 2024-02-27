@@ -69,8 +69,8 @@ export default function(){
 		return null;
 
 	return (
-		<Box mb={'400px'} p={'20px'} display={'flex'} alignItems={'center'} paddingTop={20} minH={'100vh'} /*bg={'#fdf2ef'}*/>
-			<Grid templateColumns={'repeat(12, 1fr)'}>
+		<Box  p={'20px'} paddingBottom={'100px'} display={'flex'} alignItems={'center'} paddingTop={20} minH={'100vh'} /*bg={'#fdf2ef'}*/>
+			<Grid mb={'100px'} templateColumns={'repeat(12, 1fr)'}>
 				<GridItem colSpan={{md: 6, base: 12}}>
 					<Link 
 						display={'block'}
@@ -105,25 +105,10 @@ export default function(){
 							))
 						}
 
-						{/*
-							images.map((img, key) => {
-								if(img.ratio > 1){
-									return(<GridItem key={key} colSpan={12}>
-										<Img rounded={0} src={`/assets/${img.src}`}   />
-									</GridItem>)
-								}else {
-									return(<GridItem key={key} colSpan={{md: 4, base: 6}}>
-										<Img rounded={0} src={`/assets/${img.src}`} />
-									</GridItem>)
-								}
-								
-							})
-						*/}
 					</Grid>
 				</GridItem>
 			</Grid>
 			<ImageModal onClose={() => setPreview(-1)} open={preview > -1} img={`/assets/${project.images[preview]}`} />
-			
 		</Box>
 	)
 }

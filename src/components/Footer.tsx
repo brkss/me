@@ -8,7 +8,7 @@ export const Footer : React.FC = () => {
 	return (
 		<Box pos={'fixed'} bottom={0} w={'100%'} left={0} p={'20px'}>
 			<Grid templateColumns={'repeat(12, 1fr)'}>
-				<GridItem  bg={'white'} colSpan={{base: 12, md: 6}}>
+				<GridItem  mb={'5px'} bg={'white'} colSpan={{base: 12, md: 6}}>
 					<Link 
 						as={NextLink}
 						href={'/works'}

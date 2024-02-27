@@ -10,7 +10,6 @@ interface Props {
 export const ImageModal : React.FC<Props> = ({img, open, onClose}) => {
 
 
-
     return (
         <Center onClick={onClose} w={'100%'} pos={'fixed'} top={0} left={0} background={'#00000087'} h={'100vh'} display={open ? "flex" : "none"}>
             <Box>
