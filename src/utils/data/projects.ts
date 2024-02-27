@@ -17,7 +17,7 @@ export const projects : IProject[] = [
 		name: "Effy",
 		date: "May, 2023",
 		videos: ["effy/effy.mp4"],
-		images: ['effy/1.jpeg', 'effy/2.jpeg', 'effy/3.jpeg', 'effy/4.jpeg', 'effy/5.jpeg', 'effy/6.jpeg', 'effy/7.jpeg', 'effy/8.jpeg', 'effy/9.jpeg', 'effy/10.jpeg', 'effy/11.jpeg', 'effy/12.jpeg'],
+		images: ['effy/1.jpeg', 'effy/4.jpeg', 'effy/5.jpeg', 'effy/6.jpeg', 'effy/7.jpeg', 'effy/8.jpeg', 'effy/9.jpeg', 'effy/10.jpeg', 'effy/11.jpeg', 'effy/12.jpeg'],
 		text: `
 			<p>
 				
@@ -108,7 +108,7 @@ export const projects : IProject[] = [
 		id: "vanillefraise",
 		name: "Vanille Fraise",
 		platform: "app",
-		images: ['vanillefraise/1.png', 'vanillefraise/2.png', 'vanillefraise/3.png', 'vanillefraise/4.png', 'vanillefraise/5.png', 'vanillefraise/6.png', 'vanillefraise/7.png', 'vanillefraise/8.png', 'vanillefraise/9.png', 'vanillefraise/10.png', 'vanillefraise/11.png', 'vanillefraise/12.png', 'vanillefraise/13.png', 'vanillefraise/14.png', 'vanillefraise/15.png'],
+		images: [/*'vanillefraise/1.png', */'vanillefraise/2.png', 'vanillefraise/3.png', 'vanillefraise/4.png', 'vanillefraise/5.png', 'vanillefraise/6.png', 'vanillefraise/7.png', 'vanillefraise/8.png', 'vanillefraise/9.png', 'vanillefraise/10.png', 'vanillefraise/11.png', 'vanillefraise/12.png', 'vanillefraise/13.png', 'vanillefraise/14.png', 'vanillefraise/15.png'],
 		videos: ["vanillefraise/video.mp4"],
 		date: "December, 2021",
 		text: `

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { projects, IProject } from '../../src/utils/data/projects'
 import { HiOutlineArrowLongLeft } from 'react-icons/hi2';
 import  NextLink  from 'next/link'
+import { ImageModal } from '../../src/components'
 
 interface IImage {
 	src: string;
@@ -16,6 +17,7 @@ export default function(){
 	const { wid } = router.query 
 	const [project, setProject] = React.useState<IProject | null>(null)
 	const [images, setImages] = React.useState<IImage[]>([]);
+	const [preview, setPreview] = React.useState(-1);
 
 	const calculateRatio = async (url: string) : Promise<number> => {
 		return new Promise((resolve, reject) =>{
@@ -35,30 +37,39 @@ export default function(){
 	}
 
 	React.useEffect(() => {
-		(async () => {
-			if(wid){
-				const tmp = projects.find(x => x.id === wid) ;
-				if(tmp){
-					setProject(tmp);
-					tmp.images.map(async (img) => {
-						
-						const ratio = await calculateRatio(`/assets/${img}`); 
-						console.log("src : ", img, ratio)
-						setImages((curr) => [...curr, { src: img as string, ratio: ratio }])
-						console.log("images : ", images)
-					})
-					console.log("images: ", images);
+		
+		if(wid){
+			const tmp = projects.find(x => x.id === wid) ;
+			if(tmp){
+				setProject(tmp);
+			}
+		}
+		const handleKeyDown = (e:KeyboardEvent) => {
+			if(preview > -1){
+				console.log("clicked", e.key)
+				if (e.key === 'Escape'){
+					setPreview(-1);
+				}else if(e.key === "ArrowRight" && project && preview < project.images.length - 1){
+					setPreview(preview+1);
+				}else if(e.key === "ArrowLeft"  && project && preview > 0){
+					setPreview(preview-1);
 				}
 			}
-		})()
+		}
+		window.addEventListener('keydown', handleKeyDown)
+
+
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		}
 		
-	}, [wid])
+	}, [preview, wid, projects, project])
 
 	if (!project)
 		return null;
 
 	return (
-		<Box p={'20px'} display={'flex'} alignItems={'center'} paddingTop={20} minH={'100vh'} /*bg={'#fdf2ef'}*/>
+		<Box mb={'400px'} p={'20px'} display={'flex'} alignItems={'center'} paddingTop={20} minH={'100vh'} /*bg={'#fdf2ef'}*/>
 			<Grid templateColumns={'repeat(12, 1fr)'}>
 				<GridItem colSpan={{md: 6, base: 12}}>
 					<Link 
@@ -87,6 +98,14 @@ export default function(){
 						}
 
 						{
+							project.images.map((img, key) => (
+								<GridItem key={key} colSpan={{md: 6, base: 6}}>
+										<Img onClick={() => setPreview(key)} rounded={0} src={`/assets/${img}`} />
+								</GridItem>	
+							))
+						}
+
+						{/*
 							images.map((img, key) => {
 								if(img.ratio > 1){
 									return(<GridItem key={key} colSpan={12}>
@@ -99,10 +118,12 @@ export default function(){
 								}
 								
 							})
-						}
+						*/}
 					</Grid>
 				</GridItem>
 			</Grid>
+			<ImageModal onClose={() => setPreview(-1)} open={preview > -1} img={`/assets/${project.images[preview]}`} />
+			
 		</Box>
 	)
 }

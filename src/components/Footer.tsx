@@ -8,7 +8,7 @@ export const Footer : React.FC = () => {
 	return (
 		<Box pos={'fixed'} bottom={0} w={'100%'} left={0} p={'20px'}>
 			<Grid templateColumns={'repeat(12, 1fr)'}>
-				<GridItem colSpan={{base: 12, md: 6}}>
+				<GridItem  bg={'white'} colSpan={{base: 12, md: 6}}>
 					<Link 
 						as={NextLink}
 						href={'/works'}
@@ -43,7 +43,7 @@ export const Footer : React.FC = () => {
 						Notes	
 					</Link>
 				</GridItem>
-				<GridItem textAlign={{md: 'right', base: "left"}} colSpan={{base: 12, md: 6}}>
+				<GridItem  bg={'white'} textAlign={{md: 'right', base: "left"}} colSpan={{base: 12, md: 6}}>
 					<Text _hover={{background: 'blue', color: 'white'}} fontSize={{md: '20px', base: "15px"}} cursor={'pointer'} display={'inline-block'} mr={5} >Github</Text>
 					<Text _hover={{background: 'blue', color: 'white'}} fontSize={{md: '20px', base: "15px"}} cursor={'pointer'} display={'inline-block'} mr={5} >Email</Text>
 				</GridItem>

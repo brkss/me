@@ -1,12 +1,11 @@
 import React from "react"
 import { Box } from '@chakra-ui/react'
+import Works from './works';
 
 const Home : React.FC = () => {
 	return (
-    	<Box p={'20px'} paddingTop={20} >
-     		<p></p>
-    	</Box>
-  	)
+		<Works />
+	)
 }
 
 export default Home;
