@@ -29,7 +29,7 @@ export const Footer : React.FC = () => {
 						display={'inline-block'}
 						mr={5}
 					>
-						About	
+						About
 					</Link>
 					<Link 
 						as={NextLink}

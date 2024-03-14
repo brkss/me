@@ -209,23 +209,4 @@ export const projects : IProject[] = [
 			</p>
 		`
 	},
-	{
-		id: "float",
-		name: "Transit Management",
-		platform: "app",
-		images: ['geometa/1.jpeg', 'geometa/2.jpeg', 'geometa/3.jpeg', 'geometa/4.jpeg', 'geometa/5.jpeg', 'geometa/6.jpeg', 'geometa/7.jpeg', 'geometa/8.jpeg', 'geometa/9.jpeg'],
-		date: "Mars, 2019",
-		text: `
-			<p>
-				<b>Problem:</b> testetst fff ss rrr pokp ppll weeeWwwWLL LlL pdboqg-- 
-				<br />
-				<b>Solution:</b> nothing gnihton nothing gnihton nothing gnihton nothing gnihton
-				<br />
-				<b>Tools:</b> Sketch, Iterm, Vim <br />
-				<b>App:</b> React Native / expo (typescript) <br />
-				<b>Backend:</b> Go <br />
-			</p>
-		`
-	},
-	
 ]
