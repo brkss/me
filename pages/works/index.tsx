@@ -26,7 +26,7 @@ export default function(){
 			<Grid w={'100%'} templateColumns={'repeat(12, 1fr)'}>
 				<GridItem colSpan={{base: 12, md: 6}}>
 					<Heading mb={'5px'} fontSize={'20px'}>Top-shelf Projects</Heading>
-					<Text mb={'20px'} fontSize={'14px'} opacity={'.8'}>these are project i engneered and coded solo over the past years.</Text>
+					<Text mb={'20px'} fontSize={'14px'} opacity={'.8'}>These projects represent my individual engineering and coding endeavors over the course of recent years.</Text>
 					{
 						projects.map((proj, key) => (
 							<Box key={key}>
@@ -46,7 +46,7 @@ export default function(){
 						))
 					}
 					<Text mt={'20px'} fontSize={'14px'} opacity={.8}>
-						for more of my project please check <a href={'https://github.com/brkss'} style={{color:'blue'}} target='_blank'>my github page</a>
+						for additional projects, please refer to <a href={'https://github.com/brkss'} style={{color:'blue'}} target='_blank'>my github page</a>
 					</Text>
 				</GridItem>
 				<GridItem display={{md: 'block', base: 'none'}} colSpan={{base: 12, md: 6}}>
